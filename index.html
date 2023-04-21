@@ -29,13 +29,17 @@
 
           <ul class="site-nav list">
             <li class="address-item">
-              <a href="./index.html" class="link">Studio</a>
+              <a href="./index.html" class="header-line-link link current"
+                >Studio</a
+              >
             </li>
             <li class="address-item">
-              <a href="./portfolio.html" class="link">Portfolio</a>
+              <a href="./portfolio.html" class="header-line-link link"
+                >Portfolio</a
+              >
             </li>
             <li class="address-item">
-              <a href="" class="link">Contacts</a>
+              <a href="" class="header-line-link link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -63,7 +67,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="but" type="button">Order Service</button>
+          <button class="but" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Approaches of our company -->
@@ -387,6 +393,7 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
 
     <footer class="footer">
@@ -435,5 +442,17 @@
         </div>
       </div>
     </footer>
+    <!-- --------------modal------------- -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="bnt-modal-close" type="button" data-modal-close>
+          <svg class="x-icon" width="8" height="8">
+            <use href="./images/icon.svg#close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
